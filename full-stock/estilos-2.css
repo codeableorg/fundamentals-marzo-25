@@ -1,0 +1,54 @@
+/* Clases  */
+
+.red {
+  color: red;
+}
+
+.blue {
+  color: blue;
+}
+
+/* Selectores de Pseudo Clases  */
+
+h2:active {
+  background-color: pink;
+  color: purple;
+}
+
+p:hover {
+  font-size: 24px;
+}
+
+li:not(.extra-big) {
+  color: green;
+}
+
+/* Selectores de Pseudo Elementos  */
+
+p::before {
+  content: "😂";
+}
+
+p::after {
+  content: "🙂‍↔️";
+}
+
+code::before,
+code::after {
+  content: "`";
+}
+
+::selection {
+  background-color: aqua;
+}
+
+::marker {
+  font-size: 36px;
+  content: "👍";
+  /* content: none; */
+}
+
+/* Combinador de descendientes */
+p strong {
+  color: gold;
+}
