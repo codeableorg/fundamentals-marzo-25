@@ -1,0 +1,55 @@
+/* Selectores CSS: */
+
+/* 1. Selector Universal  */
+
+* {
+  color: purple;
+}
+
+/* 2. Selectores de Tipo */
+
+h1 {
+  color: red;
+  background-color: gray;
+}
+
+p {
+  color: blue;
+  background-color: gray;
+}
+
+/* 3. Selectores de Clase  */
+
+.big {
+  font-size: 20px;
+  color: black;
+}
+
+.small {
+  font-size: 12px;
+}
+
+.extra-big {
+  font-size: 24px;
+}
+
+.extra-small {
+  font-size: 8px;
+}
+
+/* 4. Selectores de ID  */
+
+#top-element {
+  text-align: center;
+  color: green;
+}
+
+/* 
+
+Atributo style
+ID
+Clase
+Tipo 
+Universal 
+
+*/
