@@ -2,9 +2,9 @@
 
 /* 1. Selector Universal  */
 
-* {
+/* * {
   color: purple;
-}
+} */
 
 /* 2. Selectores de Tipo */
 
@@ -14,7 +14,7 @@ h1 {
 }
 
 p {
-  color: blue;
+  color: yellow;
   background-color: gray;
 }
 
@@ -39,17 +39,47 @@ p {
 
 /* 4. Selectores de ID  */
 
-#top-element {
+/* #top-element {
   text-align: center;
   color: green;
+} */
+
+/* Selectores de Atributos  */
+
+[src="./images/guarantee.png"] {
+  opacity: 1;
 }
+
+/* [class] {
+  color: green;
+} */
+
+[class*="big"] {
+  color: yellow;
+}
+
+/* Operador Caret `^` */
+[class^="big"] {
+  color: yellow;
+}
+
+[class$="end"] {
+  color: blueviolet;
+}
+
+/* ~ swing dash  tilde ondulada */
 
 /* 
 
+Cascada
+
+Resumen: origen, !important y la especificidad, 
+
+
 Atributo style
 ID
-Clase
-Tipo 
+Clases - Pseudo Clases - Atributos
+Tipo - Pseudo Elementos
 Universal 
 
 */
