@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Hermano directo `+` */
+      #ref-item + li {
+        color: red;
+      }
+
+      /* Hermanos en general `~` */
+      #ref-item ~ li {
+        color: blue;
+      }
+
+      /* Selector de Pseudo Clase :has() */
+      /* Selecciona el elemento con el id #ref-item que tenga un hermano directa del tipo li */
+      #ref-item:has(+ li) {
+        color: green;
+      }
+
+      /* Selecciona todos los li que tenga un hermano con el id #ref-item */
+      li:has(~ #ref-item) {
+        color: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li id="ref-item">Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>Elemento 5</li>
+        <li>Elemento 6</li>
+        <li>Elemento 7</li>
+        <li>Elemento 8</li>
+      </ul>
+    </div>
+  </body>
+</html>

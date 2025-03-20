@@ -3,14 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/full-stock/box-model.css" />
+    <!-- <link rel="stylesheet" href="units.css" /> -->
     <title>FullStock | Términos y Condiciones</title>
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      /* body {
+        margin-top: 0px;
+        padding-top: 10px;
+      }
+
+      div {
+        margin-top: 20px;
+        margin-bottom: 5px;
+      } */
+
+      h2 {
+        /* box-sizing: content-box; */
+
+        /* width: 320px;
+        padding: 0px 10px;
+        border: 2px solid; */
+
+        /* 344 px de width  */
+
+        /* box-sizing: border-box; */
+      }
+
+      div > p {
+        font-weight: 700;
+      }
+    </style>
   </head>
   <body>
     <header>
-      <h1 class="big" id="top-element" style="">
-        Términos y Condiciones de FullStock
-      </h1>
+      <h1 class="big" id="top-element" style="">Hola Mundo</h1>
+      <div></div>
       <p class="parrafo">
         <em class="end">
           ¡Bienvenidos a FullStock, la tienda e-commerce favorita de los
@@ -22,11 +54,17 @@
 
     <main>
       <section>
-        <!-- Pseudo Elementos  -->
-        <!-- ::before
-        ::after -->
-
         <h2 class="">Acerca de Nosotros</h2>
+
+        <div>Hola Mundo</div>
+
+        <div>
+          <p>Hola Mundo</p>
+        </div>
+
+        <div>
+          <strong>Hola Mundo</strong>
+        </div>
 
         <p class="parrafo">
           Por ejemplo el selector <code>a::before</code> inserta un elemento
@@ -44,6 +82,7 @@
         </p>
       </section>
       <section>
+        <p class="red">Parrafo de prueba</p>
         <h2>Condiciones de Uso</h2>
         <ul>
           <li>
@@ -79,6 +118,7 @@
             confirma tu compra. ¡Es fácil!
           </li>
         </ol>
+        <p class="red">Parrafo de prueba</p>
       </section>
       <section>
         <h2>Métodos de Pago</h2>
@@ -232,3 +272,18 @@
     </footer>
   </body>
 </html>
+
+<!-- 
+<bento>
+    <orange class="small"></p>
+</bento>
+
+bento orange.small {
+
+}
+
+<orange class="small"></orange>
+
+orange.small {
+
+} -->
