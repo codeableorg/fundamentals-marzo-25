@@ -1,0 +1,27 @@
+body {
+  background-color: #628395;
+}
+
+h1,
+h2 {
+  color: #b98389;
+}
+
+p {
+  /* color: rgb(0, 0, 255, 0.5); */
+  /* Hexadecimal: #RRGGBBtt  */
+  color: #db2955;
+  /* color: #00ff00;
+  color: #0000ff;
+  color: #000000;
+  color: #ffffff; */
+
+  /* HSL
+  Hue
+  Saturation
+  Lightness
+  */
+  /* color: hsla(188, 100%, 57%, 0);
+  background-color: hsl(182 74% 76%);
+  background-color: transparent; */
+}

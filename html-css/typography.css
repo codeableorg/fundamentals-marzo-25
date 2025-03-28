@@ -1,0 +1,38 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"); */
+
+@font-face {
+  font-family: "SCPro";
+  src: url("/fonts/SourceCodePro-VariableFont_wght.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SCPro Italic";
+  src: url("/fonts/SourceCodePro-Italic-VariableFont_wght.ttf") format("ttf");
+  font-weight: normal;
+  font-style: italic;
+}
+
+p {
+  font-family: SCPro, sans-serif;
+}
+
+h1,
+h2 {
+  font-family: "SCPro Italic";
+}
+
+/* .source-code-pro-normal {
+  font-family: "Source Code Pro", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.source-code-pro-bold {
+  font-family: "Source Code Pro", monospace;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+} */
