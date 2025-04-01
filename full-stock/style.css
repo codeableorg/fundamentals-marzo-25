@@ -7,6 +7,11 @@ body {
     "Helvetica Neue", Arial, sans-serif;
   color: hsl(0deg 0% 9%); /* #171717 */
   line-height: 1.75rem;
+
+  max-width: 768px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3rem 1rem 0 1rem;
 }
 
 /* 
@@ -97,14 +102,73 @@ code::before {
 }
 
 figure {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
 }
 
 figure > img {
-  max-width: inherit;
-  border-radius: 6px;
+  width: 480px;
+  height: 270px;
+}
+
+figcaption {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: hsl(0deg 0% 32%);
+  text-align: center;
+}
+
+a {
+  font-weight: 500;
+  font-size: 1rem;
+  color: hsl(263deg 70% 50%);
+  text-underline-offset: 3px;
+  text-decoration-skip-ink: none;
+}
+
+footer {
+  background-color: hsl(0deg 0% 96%);
+  text-align: center;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  border-collapse: collapse;
+}
+
+th {
+  font-weight: 600;
+  text-align: left;
+  padding: 0.5rem;
+  padding-top: 0;
+  border-bottom: 1px solid hsl(0deg 0% 64%);
+}
+
+tr th:first-child,
+tr td:first-child {
+  padding-left: 0;
+}
+
+tr th:last-child,
+tr td:last-child {
+  padding-right: 0;
+}
+
+td {
+  padding: 0.5rem;
+  border-bottom: 1px solid hsl(0deg 0% 83%);
+}
+
+tr:last-child td {
+  border-bottom: none;
 }
