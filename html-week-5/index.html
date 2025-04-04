@@ -5,18 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      body {
-        display: grid;
-      }
-
       .container {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        /* grid-template-rows: repeat(2, 25px); */
-        grid-auto-rows: 200px;
-        /* gap: 2px; */
-        row-gap: 5px;
-        column-gap: 1px;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-template-rows: auto;
+        gap: 2px;
+        /* grid-template-areas:
+          "enc enc enc acc acc"
+          "bli con con con bld"
+          "bli con con con bld"
+          ". pdg pdg pdg ."; */
       }
 
       .item {
@@ -24,20 +22,69 @@
       }
 
       .item-1 {
-        grid-column-start: 1;
-        grid-column-end: 3;
-        grid-row-start: 1;
-        grid-row-end: 3;
+        background-color: cornflowerblue;
+        /* grid-area: enc; */
+        /* grid-column-start: 2;
+        grid-column-end: auto;
+        grid-row-start: 2;
+        grid-row-end: auto; */
+        /* grid-column: 3 / 5;
+        grid-row: 2 / 4; */
+      }
+
+      .item-2 {
+        /* grid-area: con; */
+      }
+
+      .item-3 {
+        /* grid-area: acc; */
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="item item-1">1</div>
-      <div class="item">2</div>
-      <div class="item">3</div>
-      <div class="item">4</div>
+      <div class="item item-1">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, nobis!
+      </div>
+      <div class="item item-2">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus
+        quisquam adipisci excepturi nihil commodi inventore nesciunt incidunt
+        eligendi laudantium aspernatur officia ducimus, quasi atque, praesentium
+        dolorum ullam assumenda mollitia, reiciendis impedit! Fugit, natus?
+        Accusamus blanditiis ex molestiae dolorem quod, ipsam tempore rem quasi
+        minus facilis quas, doloremque facere, ipsum sint autem aliquid ea
+        suscipit. Et numquam dolores esse. Nesciunt alias explicabo temporibus
+        earum ratione facere sint minus sed voluptatem distinctio magnam
+        doloremque, quod quidem consequatur nihil delectus aperiam quo numquam
+        recusandae. Quisquam provident obcaecati dolor fuga et, dolore ut amet
+        inventore expedita nemo dolorum, nisi vitae, nulla delectus animi alias!
+      </div>
+      <div class="item item-3">3</div>
+      <div class="item">Lorem ipsum dolor sit amet.</div>
       <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum in,
+        ducimus praesentium nostrum laborum aut asperiores quibusdam soluta at
+        excepturi iure minus culpa corrupti fugit quam dolores porro molestias?
+        Voluptates!
+      </div>
+      <div class="item">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum et
+        temporibus, a blanditiis reiciendis eligendi placeat aspernatur aliquid
+        id deleniti.
+      </div>
+      <div class="item">9</div>
+      <div class="item">10</div>
+      <div class="item">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate,
+        voluptatibus. At maiores magni nihil fugit quo atque! Blanditiis
+        recusandae totam dolor reiciendis nostrum, quasi itaque.
+      </div>
+      <div class="item">12</div>
+      <div class="item">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, velit?
+      </div>
     </div>
   </body>
 </html>
