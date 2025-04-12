@@ -1,0 +1,14 @@
+/* 
+file: categoria-polos.css
+line 1
+antiguo nombre de clase: .products-container
+*/
+
+.products-catalog {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(288px, 1fr));
+  gap: 2.5rem 2rem;
+  max-width: 928px;
+  margin-left: auto;
+  margin-right: auto;
+}

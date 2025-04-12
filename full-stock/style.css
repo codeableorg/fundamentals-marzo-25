@@ -1,3 +1,21 @@
+:root {
+  /* Custom Properties */
+  --mi-propiedad: red;
+  --color-rojo: red;
+  --color-verde: green;
+  --color-azul: blue;
+  --color-rojo: red;
+  --color-rojo: red;
+  --espaciado-extra-largo: 32px;
+  --espaciado-largo: 24px;
+  --espaciado-normal: 1rem;
+  --numero: 200;
+
+  --mi-borde: 2px solid #ff0000;
+  --mi-estilo-de-linea: double;
+  --regular-size: 1.25rem;
+}
+
 body {
   line-height: 1.5rem;
 }
@@ -16,6 +34,8 @@ section {
 }
 
 .container-header {
+  /* border: var(--mi-propiedad); */
+  /* border: var(--mi-estilo-de-linea); */
   max-width: 768px;
   margin-bottom: 2.5rem;
 }
@@ -24,12 +44,12 @@ section {
   font-weight: 700;
   font-size: 2.25rem;
   line-height: 2.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: var(--regular-size);
 }
 
 .header-description {
   font-weight: 400;
-  font-size: 1rem;
+  font-size: var(--regular-size);
   color: hsl(220deg 6% 40%);
 }
 
@@ -41,11 +61,12 @@ section {
 
 .category {
   width: 384px;
+  --color-naranja: #ffa500;
 }
 
 .category img {
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: var(--regular-size);
   border-radius: 12px;
   aspect-ratio: 4 / 5;
   object-fit: cover;
@@ -56,14 +77,20 @@ section {
 }
 
 .category h3 {
+  color: var(--color-naranja);
   font-weight: 600;
-  font-size: 1rem;
+  font-size: var(--regular-size);
   margin-bottom: 0.5rem;
 }
 
 .category p {
   font-weight: 400;
-  font-size: 1rem;
+  font-size: var(--regular-size);
   line-height: 0.875rem;
   color: hsl(220deg 6% 40%);
+}
+
+footer a {
+  /* No funciona porque estamos fuera del scope de .category */
+  color: var(--color-naranja);
 }

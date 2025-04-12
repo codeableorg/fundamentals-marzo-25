@@ -1,9 +1,11 @@
-* {
-  margin: 0;
-}
+/* 
+file: categoria-polos.css  
+line 1 
+*/
 
 body {
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
   color: hsl(210deg 13% 13%);
+  line-height: 1.25rem;
 }
