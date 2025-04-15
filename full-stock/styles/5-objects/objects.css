@@ -1,0 +1,26 @@
+/* Mobile */
+.container {
+  --padding: var(--space-4); /* 1rem o 16px */
+
+  max-width: var(--width-7xl);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--padding);
+  padding-right: var(--padding);
+}
+
+/* Tablet */
+/* min-width <= 640px */
+@media (min-width: 40rem) {
+  .container {
+    --padding: var(--space-6); /*1.5rem o 24px */
+  }
+}
+
+/* Desktop */
+/* min-width <= 1024px */
+@media (min-width: 64rem) {
+  .container {
+    --padding: var(--space-8); /* 2rem o 32px */
+  }
+}
