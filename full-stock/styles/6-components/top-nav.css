@@ -1,0 +1,18 @@
+.top-nav {
+  background-color: var(--black);
+}
+
+.top-nav__container {
+  padding-inline: var(--space-4); /* Check later */
+  height: var(--space-10);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--space-4);
+}
+
+.top-nav__action {
+  font-weight: 500;
+  color: var(--white);
+  text-decoration: none;
+}
