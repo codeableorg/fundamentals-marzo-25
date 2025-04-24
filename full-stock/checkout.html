@@ -4,51 +4,138 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="/styles/index.css" />
+    <style>
+      body {
+        max-width: 360px;
+      }
+    </style>
   </head>
   <body>
     <form action="">
       <fieldset>
         <legend>Información de contacto</legend>
         <label for="email">Correo electrónico</label>
-        <input type="email" name="email" id="email" />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          autocomplete="email"
+          required
+        />
       </fieldset>
       <hr />
       <fieldset>
         <legend>Información de envío</legend>
         <div>
           <label for="first-name">Nombre</label>
-          <input id="first-name" name="first-name" type="text" required />
+          <input
+            id="first-name"
+            name="first-name"
+            type="text"
+            autocomplete="given-name"
+            required
+          />
         </div>
         <div>
           <label for="last-name">Apellido</label>
-          <input id="last-name" name="last-name" type="text" required />
+          <input
+            id="last-name"
+            name="last-name"
+            type="text"
+            autocomplete="family-name"
+            required
+          />
         </div>
         <div>
           <label for="company">Compañía</label>
-          <input id="company" name="company" type="text" />
+          <input
+            id="company"
+            name="company"
+            type="text"
+            autocomplete="organization"
+          />
         </div>
         <div>
           <label for="address">Dirección</label>
-          <input id="address" name="address" type="text" required />
+          <input
+            id="address"
+            name="address"
+            type="text"
+            autocomplete="street-address"
+            required
+          />
         </div>
         <div>
           <label for="city">Ciudad</label>
-          <input id="city" name="city" type="text" required />
+          <input
+            id="city"
+            name="city"
+            type="text"
+            autocomplete="address-line2"
+            required
+          />
         </div>
         <div>
           <label for="country">País</label>
-          <select name="country" id="country">
+          <select name="country" id="country" required>
             <option value="">Select</option>
-            <option value="">Select</option>
-            <option value="">Select</option>
-            <option value="">Select</option>
-            <option value="">Select</option>
-            <option value="">Select</option>
-            <option value="">Select</option>
+            <option value="argentina">Argentina</option>
+            <option value="bolivia">Bolivia</option>
+            <option value="brasil">Brasil</option>
+            <option value="chile">Chile</option>
+            <option value="colombia">Colombia</option>
+            <option value="costa_rica">Costa Rica</option>
+            <option value="cuba">Cuba</option>
+            <option value="dominica">Dominica</option>
+            <option value="ecuador">Ecuador</option>
+            <option value="el_salvador">El Salvador</option>
+            <option value="españa">España</option>
+            <option value="guatemala">Guatemala</option>
+            <option value="honduras">Honduras</option>
+            <option value="mexico">México</option>
+            <option value="nicaragua">Nicaragua</option>
+            <option value="panama">Panamá</option>
+            <option value="paraguay">Paraguay</option>
+            <option value="peru">Perú</option>
+            <option value="puerto_rico">Puerto Rico</option>
+            <option value="republica_dominicana">República Dominicana</option>
+            <option value="uruguay">Uruguay</option>
+            <option value="venezuela">Venezuela</option>
           </select>
         </div>
+        <div>
+          <label for="region">Provincia/Estado</label>
+          <input
+            id="region"
+            name="region"
+            type="text"
+            autocomplete="address-level1"
+            required
+          />
+        </div>
+        <div>
+          <label for="postal-code">Código postal</label>
+          <input
+            id="postal-code"
+            name="postal-code"
+            type="text"
+            autocomplete="postal-code"
+            required
+          />
+        </div>
+        <div>
+          <label for="phone">Teléfono</label>
+          <input
+            id="phone"
+            name="phone"
+            type="tel"
+            autocomplete="tel"
+            required
+          />
+        </div>
       </fieldset>
-      <button>Confirmar Orden</button>
+      <button class="button" type="submit">Confirmar Orden</button>
     </form>
   </body>
 </html>
