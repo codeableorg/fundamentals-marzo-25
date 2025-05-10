@@ -5,122 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      form {
-        border-style: solid;
-        padding: 0.5rem;
+      * {
+        box-sizing: border-box;
+        margin: 0;
       }
 
-      input {
-        /* display: block; */
-        margin-bottom: 10px;
+      body {
+        background-color: aliceBlue;
+        font-family: sans-serif;
+        margin: 32px 16px;
       }
 
-      fieldset {
-        margin-bottom: 10px;
+      .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 100px);
+        grid-auto-rows: 100px;
+        gap: 16px;
+        justify-content: center;
+      }
+
+      .picture {
+        /* border: 1px solid Gainsboro; */
+        border-radius: 16px;
+        overflow: hidden;
+      }
+
+      .picture img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: relative;
+      }
+
+      .picture:hover img {
+        bottom: 10px;
       }
     </style>
   </head>
   <body>
-    <h1>Hola Mundo!</h1>
-
-    <form action="" method="get" target="_blank">
-      <label for="firstname">Nombre:</label>
-      <input id="firstname" type="text" name="firstname" placeholder="John" />
-
-      <label>
-        Apellido:
-        <input name="lastname" placeholder="Doe" />
-      </label>
-
-      <fieldset>
-        <legend>¿Qué sistema operativo usas?</legend>
-
-        <label>
-          <input type="radio" name="sistema" value="windows" />
-          Windows
-        </label>
-        <input id="input-macos" type="radio" name="sistema" value="macos" />
-        <label for="input-macos">MacOS</label>
-        <input id="input-linux" type="radio" name="sistema" value="linux" />
-        <label for="input-linux">Linux</label>
-        <input id="input-otro" type="radio" name="sistema" value="otro" />
-        <label for="input-otro">Otro</label>
-      </fieldset>
-
-      <fieldset>
-        <legend>¿Qué tecnologías dominas?</legend>
-        <label><input type="checkbox" name="html" value="si" />HTML</label>
-        <label><input type="checkbox" name="css" value="si" />CSS</label>
-        <label><input type="checkbox" name="js" value="si" />JavaScript</label>
-        <label><input type="checkbox" name="node" value="si" />Node.js</label>
-        <label
-          ><input type="checkbox" name="express" value="si" />Express</label
-        >
-        <label
-          ><input
-            type="checkbox"
-            name="postgresql"
-            value="si"
-          />PostgreSQL</label
-        >
-        <label><input type="checkbox" name="react" value="si" />React</label>
-        <label
-          ><input type="checkbox" name="tw" value="si" />Tailwind CSS</label
-        >
-      </fieldset>
-
-      <label for="pais">Pais de nacimiento:</label>
-      <select id="pais" name="pais">
-        <option value="">Selecciona uno</option>
-        <optgroup label="America del Sur">
-          <option value="AR">Argentina</option>
-          <option value="BO">Bolivia</option>
-          <option value="BR" disabled>Brasil</option>
-          <option value="CL">Chile</option>
-          <option value="CO">Colombia</option>
-          <option value="EC">Ecuador</option>
-          <option value="PY">Paraguay</option>
-          <option value="PE" selected>Perú</option>
-          <option value="UY">Uruguay</option>
-          <option value="VE">Venezuela</option>
-        </optgroup>
-        <optgroup label="Centro America">
-          <option value="CR">Costa Rica</option>
-          <option value="CU">Cuba</option>
-          <option value="DO">República Dominicana</option>
-          <option value="SV">El Salvador</option>
-          <option value="GT">Guatemala</option>
-          <option value="HN">Honduras</option>
-          <option value="MX">México</option>
-          <option value="NI">Nicaragua</option>
-          <option value="PA">Panamá</option>
-          <option value="PR">Puerto Rico</option>
-        </optgroup>
-      </select>
-
-      <br />
-      <br />
-
-      <label for="sobre-mi">Cuentanos un poco sobre ti:</label>
-      <textarea name="sobre-mi" id="sobre-mi" maxlength="1000">
-Aqui es donde se carga el valor del textarea
-      </textarea>
-
-      <br />
-      <br />
-      <input
-        id="acepta-terminos"
-        type="checkbox"
-        name="acepta-terminos"
-        value="si"
-        checked
-        required
-      />
-      <label for="acepta-terminos">Acepta los terminos y condiciones</label>
-
-      <br />
-      <button>Enviar</button>
-      <button type="reset">Reset</button>
-    </form>
+    <div class="container">
+      <a href="" class="picture">
+        <img src="https://picsum.photos/seed/pic1/100" />
+      </a>
+      <a href="" class="picture">
+        <img src="https://picsum.photos/seed/pic2/100" />
+      </a>
+      <a href="" class="picture">
+        <img src="https://picsum.photos/seed/pic3/100" />
+      </a>
+      <a href="" class="picture">
+        <img src="https://picsum.photos/seed/pic4/100" />
+      </a>
+    </div>
   </body>
 </html>

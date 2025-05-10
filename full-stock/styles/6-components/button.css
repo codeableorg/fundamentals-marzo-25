@@ -1,9 +1,10 @@
 .button {
-  height: 32px;
+  height: var(--space-8);
   padding-inline: var(--space-2-5);
-  background-color: var(--primary-background);
+  /* background-color: var(--primary-background); */
+  background-color: hsl(240deg 60% 60%);
   display: inline-flex;
-  /* justify-content: center; */
+  justify-content: center;
   align-items: center;
   gap: var(--space-2);
   border: 1px solid transparent;
@@ -25,5 +26,23 @@
   background-color: var(--primary-background-hover);
 }
 
-/* Layout Shift */
-/* shadow-sm */
+.button--sm {
+  height: var(--space-6);
+  padding-inline: var(--space-2);
+  border-radius: var(--rounded-1-5);
+  font-size: var(--font-size-3);
+  line-height: var(--leading-4);
+}
+
+.button--xl {
+  height: var(--space-12);
+  padding-inline: var(--space-8);
+  border-radius: var(--rounded-2);
+  font-size: var(--font-size-4);
+  line-height: var(--leading-6);
+}
+
+.button--xl .button__icon {
+  width: var(--space-5);
+  height: var(--space-5);
+}

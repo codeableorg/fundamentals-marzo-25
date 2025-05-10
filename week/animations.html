@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* .container {
+        height: 100vh;
+        display: grid;
+        place-items: center;
+      } */
+
+      @keyframes aparecer {
+        from {
+          opacity: 1;
+        }
+
+        to {
+          opacity: 0;
+          display: none;
+        }
+      }
+
+      .caja {
+        font-family: sans-serif;
+        font-size: 1.5em;
+        color: white;
+        background-color: RebeccaPurple;
+        padding: 16px 32px;
+        border-radius: 16px;
+
+        animation: aparecer 5000ms ease-out;
+        animation-delay: 3000ms;
+        animation-fill-mode: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form action="">
+        <input type="text" name="firstname" />
+        <button class="caja">Llegué! 👋🏼</button>
+      </form>
+    </div>
+  </body>
+</html>
