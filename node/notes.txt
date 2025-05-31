@@ -1,4 +1,0 @@
-Profesor ese error lo resolve hacienda lo siguiente:
--Abrir powershell como administrador y poner el siguiente codigo: 
-Set-ExecutionPolicy RemoteSigned
-Luego poniendo la letra S
