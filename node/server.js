@@ -20,6 +20,7 @@ function requestListener(request, response) {
       response.end();
     });
   } else if (request.url === "/notes") {
+    /*
     fs.readFile("./pages/notes.html", "utf8", (err, content) => {
       if (err) {
         console.log(err);
@@ -29,6 +30,34 @@ function requestListener(request, response) {
       // const liElements = notes.map((note) => `<li>${note.content}</li>`).join("");
       response.writeHead(200, { "Content-Type": "text/html" });
       response.write(content);
+      response.end();
+    });
+    */
+
+    fs.readFile("./notes.json", "utf8", (err, content) => {
+      if (err) {
+        console.log(err);
+        return;
+      }
+
+      const notes = JSON.parse(content);
+      const liElements = notes
+        .map((note) => `<li>${note.content}</li>`)
+        .join("");
+      const htmlContent = `<!DOCTYPE html>
+                            <html lang="en">
+                              <head>
+                                <meta charset="UTF-8" />
+                                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                                <title>Document</title>
+                              </head>
+                              <body>
+                                <h1>Notas:</h1>
+                                <ol>${liElements}</ol>
+                              </body>
+                            </html>`;
+      response.writeHead(200, { "Content-Type": "text/html" });
+      response.write(htmlContent);
       response.end();
     });
   } else if (isUrlValid(request.url)) {
