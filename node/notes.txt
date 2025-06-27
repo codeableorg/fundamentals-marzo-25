@@ -1,0 +1,27 @@
+crear una nueva carpeta express-playground/
+crear el package.json
+requisito: tener npm instalado
+-y: responder 'yes' a todas las preguntas
+> npm init -y
+instalamos express
+>npm install express
+"scripts": {
+    "start": "node src/indexjs",
+}
+
+{
+    "name":
+    "version":
+    "main":
+    "type": "module",
+}
+
+nodemon: para no tener que reiniciar el servidor a cada rato {
+    -D: instalamos nodemon solo en la version de desarrollo
+    >npm install -D nodemon
+    dentro del package.json:
+
+    "scripts": {
+        "dev": "nodemon src/index.js",
+    }
+}
