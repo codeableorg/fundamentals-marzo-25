@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/notes.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <img src="./images/polos.png" alt="" />
+    <h1>Notas:</h1>
+    <ol>
+      <% notes.forEach((note) => { %>
+      <li><a href="/notes/<%= note.id %>"><%= note.content %></a></li>
+      <% }) %>
+    </ol>
+    <a href="/new-note">Crear nueva nota</a>
+  </body>
+</html>
